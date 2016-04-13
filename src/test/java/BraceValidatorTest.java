@@ -6,7 +6,7 @@ import java.util.List;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class BraceParserTest {
+public class BraceValidatorTest {
 
     @Test
     public void testBraceParser() {
