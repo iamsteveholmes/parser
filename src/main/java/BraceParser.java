@@ -12,10 +12,6 @@ class BraceParser {
         scanner = new Scanner(stringReader);
     }
 
-    BraceParser(InputStream inputStream) {
-        scanner = new Scanner(inputStream);
-    }
-
     List<String> parse() {
         List<String> values = new ArrayList<>();
         while(scanner.hasNext()) {
