@@ -7,6 +7,10 @@ final class BraceValidator {
         final Map<Character, Integer> braces = new HashMap<>();
         braces.put('{', 0);
         braces.put('}', 0);
+        braces.put('(', 0);
+        braces.put(')', 0);
+        braces.put('[', 0);
+        braces.put(']', 0);
 
         char[] characters = value.toCharArray();
 
@@ -18,6 +22,8 @@ final class BraceValidator {
                 braces.put(character, 1);
             }
         }
-        return braces.get('{').equals(braces.get('}'));
+        return braces.get('{').equals(braces.get('}'))
+                && braces.get('(').equals(braces.get(')'))
+                && braces.get('[').equals(braces.get(']'));
     }
 }
