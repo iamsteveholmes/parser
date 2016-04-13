@@ -5,8 +5,8 @@ final class BraceValidator {
 
     static boolean parse(String value) {
         final Map<Character, Integer> braces = new HashMap<>();
-        braces.put(new Character('{'), 0);
-        braces.put(new Character('}'), 0);
+        braces.put('{', 0);
+        braces.put('}', 0);
 
         char[] characters = value.toCharArray();
 
