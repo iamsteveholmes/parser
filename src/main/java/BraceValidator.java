@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class BraceValidator {
+final class BraceValidator {
 
     static boolean parse(String value) {
         final Map<Character, Integer> braces = new HashMap<>();
