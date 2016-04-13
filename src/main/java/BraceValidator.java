@@ -18,10 +18,6 @@ final class BraceValidator {
                 braces.put(character, 1);
             }
         }
-        if(braces.get('{').equals(braces.get('}'))) {
-            return true;
-        } else {
-            return false;
-        }
+        return braces.get('{').equals(braces.get('}'));
     }
 }
