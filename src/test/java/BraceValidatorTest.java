@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 public class BraceValidatorTest {
 
     @Test
-    public void testBraceParser() {
+    public void testBraceValidator() {
         List<String> values = new ArrayList<>();
         values.add("{}");
         values.add("{}(){(})))((");
