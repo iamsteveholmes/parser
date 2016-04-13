@@ -1,9 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class BraceValidator {
+class BraceValidator {
 
-    public static boolean parse(String value) {
+    static boolean parse(String value) {
         final Map<Character, Integer> braces = new HashMap<>();
         braces.put(new Character('{'), 0);
         braces.put(new Character('}'), 0);
